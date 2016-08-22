@@ -22,7 +22,7 @@ resources:
   #     # - "@pvt-channel"
 
   # - name: myEmailS1
-  #   type: notification
+  #   type: notification 
   #   integration: email
   #   pointer:
   #     recipients: 
