@@ -20,15 +20,15 @@ jobs:
         #- script: "sudo apt-get install tree"
     on_success:
       #- uname -a
-      - NOTIFY: myEmailS1
-      - NOTIFY: mySlackS1
+      # - NOTIFY: myEmailS1
+      # - NOTIFY: mySlackS1
       - script: echo 'infra test'
       - script: echo 'newtesting success'
      # - script: ./IN/sample-script-3/gitRepo/echo.sh
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
-      - NOTIFY: mySlackS1
+      # - NOTIFY: mySlackS1
       
   # - name: runShk8
   #   type: runSh
