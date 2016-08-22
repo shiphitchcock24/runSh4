@@ -28,7 +28,7 @@ jobs:
     on_failure:
       - script: echo 'testing1 failure'
       - script: echo 'failure runSh'
-      - NOTIFY: mySlack2
+      - NOTIFY: mySlackS1
       
   # - name: runShk8
   #   type: runSh
