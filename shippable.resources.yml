@@ -1,19 +1,19 @@
 resources:
-  - name: sample-script-3
+  - name: sample-script-runSh1
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock24/sample-script-3
       branch: master
       
-  - name: sample-script-4
+  - name: sample-script-runSh2
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock24/sample-script-3
       branch: master
       
-  - name: mySlack2
+  - name: mySlackS1
     type: notification
     integration: ship-slack1
     pointer:
@@ -21,18 +21,18 @@ resources:
         - "#random"
       # - "@pvt-channel"
 
-  - name: myEmail2
+  - name: myEmailS1
     type: notification
     integration: email
     pointer:
       recipients: 
         -  "sreya@shippable.com"
   
-  - name: env
-    type: params
-    version:
-      params:
-        foo: bar1
-        secure: K1p89sALhtCKwSew/bt7mw/nQ0E3pZ5uke5poONJ4/3k9ulWwUPvTgdCiSleRqYYNRi5BQxC06hYYrz3ExFvWfZPN+wVTtDKVVm4UICq2pZZIGGUYpjmekS/s+p4IAtjv6CYIJxwl2H1zHjTFsWsXWnUGlKdjT7hkgxPGi8ac63OcuncFOCtnwhLxyZJ83ssqMpPTNvBwncIrKgL8Ijt0gmjTqa6AH4zgN54NC0wrCdom+JWFJ930GY1eqOEVMUq+EbzS0+65OqDT/lDOwLLmvvYwWBNL0SGlB4iQJ000b75QMmN/ovrFw3Rqozr4PPN/EaNEXlxtYzO6SA9mklOrF6Q==
+  # - name: env
+  #   type: params
+  #   version:
+  #     params:
+  #       foo: bar1
+  #       secure: K1p89sALhtCKwSew/bt7mw/nQ0E3pZ5uke5poONJ4/3k9ulWwUPvTgdCiSleRqYYNRi5BQxC06hYYrz3ExFvWfZPN+wVTtDKVVm4UICq2pZZIGGUYpjmekS/s+p4IAtjv6CYIJxwl2H1zHjTFsWsXWnUGlKdjT7hkgxPGi8ac63OcuncFOCtnwhLxyZJ83ssqMpPTNvBwncIrKgL8Ijt0gmjTqa6AH4zgN54NC0wrCdom+JWFJ930GY1eqOEVMUq+EbzS0+65OqDT/lDOwLLmvvYwWBNL0SGlB4iQJ000b75QMmN/ovrFw3Rqozr4PPN/EaNEXlxtYzO6SA9mklOrF6Q==
 
 
