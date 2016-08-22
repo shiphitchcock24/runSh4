@@ -1,13 +1,13 @@
 jobs:
-  - name: runShk7
+  - name: runShtest1
     type: runSh
   #  serial: true
     steps:
-      - IN: sample-script-3
+      - IN: sample-script-runSh1
      # - IN: env
-      - IN: triggertest4
+      - IN: triggertestS1
       - TASK:
-        - script: ./IN/sample-script-3/gitRepo/echo.sh
+        - script: ./IN/sample-script-runSh1/gitRepo/echo.sh
         - script: pwd
         - script: ls
         - script: export FOO=bar
@@ -20,8 +20,8 @@ jobs:
         #- script: "sudo apt-get install tree"
     on_success:
       #- uname -a
-      - NOTIFY: myEmail2
-      - NOTIFY: mySlack2
+      - NOTIFY: myEmailS1
+      - NOTIFY: mySlackS1
       - script: echo 'infra test'
       - script: echo 'newtesting success'
      # - script: ./IN/sample-script-3/gitRepo/echo.sh
