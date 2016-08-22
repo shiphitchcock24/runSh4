@@ -4,12 +4,12 @@ triggers:
     version:
       counter: 5
       
-  - name: triggertest4
+  - name: triggertest444
     type: trigger
     version:
       counter: 427
 
-  - name: triggertest5
+  - name: triggertest544
     type: trigger
     version:
       counter: 0
