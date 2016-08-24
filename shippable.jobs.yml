@@ -34,9 +34,9 @@ jobs:
      type: runSh
   #  serial: true
      steps:
-       - IN: sample-script-4
+       - IN: sample-script-runSh2
        - IN: triggertest4
        - TASK:
-         - script: ./IN/sample-script-4/gitRepo/echo.sh
+         - script: ./IN/sample-script-runSh2/gitRepo/echo.sh
   
  
