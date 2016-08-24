@@ -2,7 +2,7 @@ triggers:
   - name: triggertestS1
     type: trigger
     version:
-      counter: 61
+      counter: 62
       
   - name: triggertest444
     type: trigger
