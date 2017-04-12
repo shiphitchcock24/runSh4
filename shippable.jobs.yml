@@ -30,7 +30,7 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: runShkn1
+  - name: sample-script-runSh1
     type: runSh
   #  serial: true
     steps:
