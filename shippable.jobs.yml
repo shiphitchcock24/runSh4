@@ -1,5 +1,5 @@
 jobs:
-  - name: sample-script-runSh1
+  - name: runtest
     type: runSh
   #  serial: true
     steps:
