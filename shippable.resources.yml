@@ -6,7 +6,7 @@ resources:
       sourceName: shiphitchcock24/sample-script-3
       branch: master
       
-  - name: sample-script-runSh2
+  - name: sample-script-runSh2   
     type: gitRepo
     integration: github
     pointer:
