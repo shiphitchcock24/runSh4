@@ -36,7 +36,7 @@ jobs:
     steps:
       - IN: sample-script-runSh2
       - IN: triggertestS1
-      - IN: runShtest1
+    #  - IN: runShtest1
       - TASK:
         - script: ./IN/sample-script-runSh2/gitRepo/echo.sh
   
