@@ -1,5 +1,5 @@
 resources:
-  - name: sample-script-runSh1
+  - name: sample-script-runSh11
     type: gitRepo
     integration: github
     pointer:
