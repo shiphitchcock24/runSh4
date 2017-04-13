@@ -3,11 +3,11 @@ jobs:
     type: runSh
   #  serial: true
     steps:
-      - IN: sample-script-runSh11
+      - IN: duplicate
      # - IN: env
       - IN: triggertestS1
       - TASK:
-        - script: ./IN/sample-script-runSh11/gitRepo/echo.sh
+        - script: ./IN/duplicate/gitRepo/echo.sh
         - script: pwd
         - script: ls
         - script: export FOO=bar
@@ -34,10 +34,10 @@ jobs:
     type: runSh
   #  serial: true
     steps:
-      - IN: sample-script-runSh2
+      - IN: duplicate
       - IN: triggertestS1
     #  - IN: runShtest1
       - TASK:
-        - script: ./IN/sample-script-runSh2/gitRepo/echo.sh
+        - script: ./IN/duplicate/gitRepo/echo.sh
   
  
