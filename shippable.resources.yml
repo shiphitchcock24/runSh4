@@ -1,12 +1,12 @@
 resources:
-  - name: sample-script-runSh11
+  - name: duplicate
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock24/sample-script-3
+      sourceName: shiphitchcock24/sample-script
       branch: master
       
-  - name: sample-script-runSh2   
+  - name: duplicate
     type: gitRepo
     integration: github
     pointer:
