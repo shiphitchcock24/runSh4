@@ -6,7 +6,7 @@ resources:
       sourceName: shiphitchcock24/sample-script
       branch: master
       
-  - name: duplicate
+  - name: duplicate1
     type: gitRepo
     integration: github
     pointer:
