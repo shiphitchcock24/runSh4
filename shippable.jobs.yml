@@ -1,6 +1,6 @@
 jobs:
   - name: manifest_dep
-    type: manifest
+    type: manifest1
     steps:
       - IN: deploy_img  
       
