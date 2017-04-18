@@ -3,4 +3,5 @@ jobs:
     type: manifest
     steps:
       - IN: deploy11 
+      - IN: spogtest1
       
