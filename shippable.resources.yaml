@@ -5,4 +5,4 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-    versionName: "deploy.2" 
+      versionName: "deploy.2" 
