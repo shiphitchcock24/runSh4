@@ -1,7 +1,7 @@
 
 triggers:
   - name: qz
-   # type: trigger
+    type: trigger
     version:
       counter: 63
  
