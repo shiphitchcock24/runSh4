@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: deploy_img      
-      - IN: t1
+      #- IN: t1
       
   - name: runtest
     type: runSh
