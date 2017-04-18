@@ -1,6 +1,6 @@
 resources:
   - name: deploy11
-    type: image
+    type: image11
     integration: ship4-docker
     pointer:
       sourceName: "shippabledocker/pipelinev2"
