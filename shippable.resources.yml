@@ -24,7 +24,9 @@ resources:
   - name: plv2-version
     type: version
     seed:
-      versionName: sreya
+      versionName: 
+        - sreyatest1
+        - sreyatest2
       #versionName: "1.1.1-beta"
   # - name: mySlackS1
   #   type: notification
