@@ -1,7 +1,0 @@
-jobs:
-  - name: man123
-    type: manifest
-    steps:
-      - IN: deploy11 
-      
-   
