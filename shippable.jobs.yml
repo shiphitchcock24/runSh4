@@ -6,6 +6,15 @@ jobs:
       - IN:FER1
       #- IN: t1
       
+  - name: release-versionn5
+    type: release
+    steps:
+      - IN: plv2-version
+      - IN: manifest_dep
+      #- IN: triggerv2sp2
+      - TASK: managed
+#  bump: major  
+
   - name: runtest
     type: runSh
   #  serial: true
