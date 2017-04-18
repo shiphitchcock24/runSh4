@@ -1,5 +1,5 @@
 resources:
-  - name: deploy11
+#  - name: deploy11
     type: image
     integration: ship4-docker
     pointer:
