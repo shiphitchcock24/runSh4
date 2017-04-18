@@ -1,6 +1,6 @@
 jobs:
   - name: man123
-   # type: manifest
+    type: manifest
     steps:
       
       - IN: deploy11 
