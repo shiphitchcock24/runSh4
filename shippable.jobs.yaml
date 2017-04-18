@@ -2,5 +2,6 @@ jobs:
   - name: man123
     type: manifest
     steps:
+      - spogtest1
       - IN: deploy11 
-      - OUT: deploy11
+     
