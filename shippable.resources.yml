@@ -13,6 +13,13 @@ resources:
       sourceName: shiphitchcock24/sample-script-3
       branch: master
       
+  - name: deploy_img
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shippabledocker/pipelinev2"
+    seed:
+      versionName: "deploy.2"  
   # - name: mySlackS1
   #   type: notification
   #   integration: ship-slack1
