@@ -6,7 +6,7 @@ jobs:
       - IN: duplicate
      # - IN: env
       - IN: triggertestS1
-      #- TASK:
+      - TASK:
        # - script: ./IN/duplicate/gitRepo/echo.sh
         - script: ./IN/duplicate/duplicate/echo.sh
         - script: pwd
