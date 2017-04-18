@@ -10,7 +10,7 @@ jobs:
     type: release
     steps:
       - IN: plv2-version
-      - IN: manifest_dep
+      - IN:manifest_dep
       #- IN: triggerv2sp2
       - TASK: managed
 #  bump: major  
