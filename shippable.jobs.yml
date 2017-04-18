@@ -2,7 +2,8 @@ jobs:
   - name: manifest_dep
     type: manifest
     steps:
-      - IN: deploy_img      
+      - IN: deploy_img  
+      - IN:FER1
       #- IN: t1
       
   - name: runtest
