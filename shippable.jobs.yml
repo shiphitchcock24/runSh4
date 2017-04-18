@@ -7,7 +7,8 @@ jobs:
      # - IN: env
       - IN: triggertestS1
       - TASK:
-        - script: ./IN/duplicate/gitRepo/echo.sh
+       # - script: ./IN/duplicate/gitRepo/echo.sh
+        - script: ./IN/duplicate/duplicate/echo.sh
         - script: pwd
         - script: ls
         - script: export FOO=bar
