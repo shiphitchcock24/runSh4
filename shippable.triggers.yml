@@ -1,5 +1,5 @@
 triggers:
-  - name: triggertestS1
+  - name: triggertestS1remove
     type: trigger
     version:
       counter: 63
