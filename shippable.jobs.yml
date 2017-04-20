@@ -21,7 +21,7 @@ jobs:
     steps:
       - IN: duplicate
      # - IN:r123env
-      - IN: triggertestS1
+      - IN: triggertestS1remove
       - TASK:
        # - script: ./IN/duplicate/gitRepo/echo.sh
         - script: ./IN/duplicate/duplicate/echo.sh
@@ -52,7 +52,7 @@ jobs:
   #  serial: true
     steps:
       - IN: duplicate
-      - IN: triggertestS1
+      - IN: triggertestS1remove
     #  - IN: runShtest1
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
