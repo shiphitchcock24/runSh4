@@ -52,7 +52,7 @@ jobs:
   #  serial: true
     steps:
       - IN: duplicate
-      - IN: triggertestS1remove
+      - IN: triggertestS1
     #  - IN: runShtest1
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
