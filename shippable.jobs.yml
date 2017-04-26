@@ -17,7 +17,7 @@ jobs:
 #  bump: major  
   - name: runcliscript-pubrepo
     type: runCLI
-    allowPublicAccess: false
+    allowPublicAccess: true
     steps:
       - IN: duplicate
       #- IN: runsh-t1
