@@ -14,7 +14,18 @@ jobs:
       #- IN: triggerv2sp2
       - TASK: managed
 #  bump: major  
-
+  - name: runcliscript-pubrepo
+    type: runCLI
+    steps:
+      - IN: duplicate
+      #- IN: runsh-t1
+      - TASK:
+        - script: ls
+        - script: ./IN/duplicate/gitRepo/echo.sh
+  
+  
+  
+  
   - name: runtest
     type: runSh
   #  serial: true
