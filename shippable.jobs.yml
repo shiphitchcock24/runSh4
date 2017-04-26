@@ -49,6 +49,7 @@ jobs:
       
   - name: runpublic
     type: runSh
+    allowPublicAccess: true
   #  serial: true
     steps:
       - IN: duplicate
