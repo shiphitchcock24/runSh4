@@ -1,6 +1,7 @@
 jobs:
   - name: manifest_dep
     type: manifest
+    allowPublicAccess: false
     steps:
       - IN: deploy_img  
       
