@@ -24,7 +24,7 @@ resources:
   - name: plv2-version
     type: version
     seed:
-      versionName: "1.1.1-beta"
+      versionName: "1.1.1-betarc"
   # - name: mySlackS1
   #   type: notification
   #   integration: ship-slack1
