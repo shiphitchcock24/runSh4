@@ -1,11 +1,23 @@
 jobs:
-  - name: manifest_dep
+  - name: manifest_dep1
     type: manifest
     allowPublicAccess: false
     steps:
       - IN: deploy_img  
       
-      #- IN: t1
+  - name: manifest_dep2
+    type: manifest
+    allowPublicAccess: false
+    steps:
+      - IN: deploy_img  
+      
+  - name: manifest_dep3
+    type: manifest
+    allowPublicAccess: false
+    steps:
+      - IN: deploy_img  
+      
+      
       
   - name: release-versionn5
     type: release
@@ -15,6 +27,7 @@ jobs:
       #- IN: triggerv2sp2
       - TASK: managed
 #  bump: major  
+
   - name: runcliscript-pubrepo
     type: runCLI
     allowPublicAccess: true
@@ -28,11 +41,12 @@ jobs:
   
   
   
-  - name: runtest
+  - name: runtest1
     type: runSh
   #  serial: true
     steps:
       - IN: duplicate
+      - IN: manifest_dep1
      # - IN:r123env
       - IN: triggertestS1
       - TASK:
@@ -60,15 +74,27 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: runpublic
+  - name: runpublic2
     type: runSh
     allowPublicAccess: false
   #  serial: true
     steps:
       - IN: duplicate
       - IN: triggertestS1
-    #  - IN: runShtest1
+      - IN: runtest1
+      - IN: manifest_dep2
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
-  
+        
+  - name: runpublic3
+    type: runSh
+    allowPublicAccess: false
+  #  serial: true
+    steps:
+      - IN: duplicate
+      - IN: triggertestS1
+      - IN: runpublic2
+      - IN: manifest_dep3
+      - TASK:
+        - script: ./IN/duplicate/gitRepo/echo.sh
  
