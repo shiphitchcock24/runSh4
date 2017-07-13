@@ -41,7 +41,7 @@ jobs:
   
   
   
-  - name: run1
+  - name: run11
     type: runSh
   #  serial: true
     steps:
@@ -81,7 +81,7 @@ jobs:
     steps:
       - IN: duplicate
       - IN: triggertestS1
-      - IN: run1
+      - IN: run11
       - IN: manifest_dep2
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
