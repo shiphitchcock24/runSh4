@@ -41,7 +41,7 @@ jobs:
   
   
   
-  - name: langtest_u14golall_runCI
+  - name: langtest_u16golall_runCI
     type: runCI
   #  serial: true
     steps:
