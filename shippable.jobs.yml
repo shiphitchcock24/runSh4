@@ -81,7 +81,7 @@ jobs:
     steps:
       - IN: duplicate
       - IN: triggertestS1
-      - IN: runtest1
+      - IN: langtest_u16golall_runCI
       - IN: manifest_dep2
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
@@ -93,7 +93,7 @@ jobs:
     steps:
       - IN: duplicate
       - IN: triggertestS1
-      - IN: runpublic2
+      - IN: langtest_u16nodall_runCI
       - IN: manifest_dep3
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
