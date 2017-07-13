@@ -41,7 +41,7 @@ jobs:
   
   
   
-  - name: runtest1
+  - name: langtest_u14golall_runCI
     type: runCI
   #  serial: true
     steps:
@@ -74,7 +74,7 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: runpublic2
+  - name: langtest_u14golall_runCI
     type: runCI
    # allowPublicAccess: false
   #  serial: true
@@ -86,7 +86,7 @@ jobs:
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
         
-  - name: runpublic3
+  - name: langtest_u14golall_runCI
     type: runCI
   #  allowPublicAccess: false
   #  serial: true
