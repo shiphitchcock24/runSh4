@@ -74,7 +74,7 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: langtest_u14nodall_runCI
+  - name: langtest_u16nodall_runCI
     type: runCI
    # allowPublicAccess: false
   #  serial: true
