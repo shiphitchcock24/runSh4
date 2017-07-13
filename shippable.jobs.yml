@@ -87,7 +87,7 @@ jobs:
         - script: ./IN/duplicate/gitRepo/echo.sh
         
   - name: run3
-    type: runCI
+    type: runSh
   #  allowPublicAccess: false
   #  serial: true
     steps:
