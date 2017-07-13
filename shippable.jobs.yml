@@ -42,7 +42,7 @@ jobs:
   
   
   - name: runtest1
-    type: runSh
+    type: runCI
   #  serial: true
     steps:
       - IN: duplicate
@@ -75,8 +75,8 @@ jobs:
     #   # - NOTIFY: mySlackS1
       
   - name: runpublic2
-    type: runSh
-    allowPublicAccess: false
+    type: runCI
+   # allowPublicAccess: false
   #  serial: true
     steps:
       - IN: duplicate
@@ -87,8 +87,8 @@ jobs:
         - script: ./IN/duplicate/gitRepo/echo.sh
         
   - name: runpublic3
-    type: runSh
-    allowPublicAccess: false
+    type: runCI
+  #  allowPublicAccess: false
   #  serial: true
     steps:
       - IN: duplicate
