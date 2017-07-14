@@ -75,7 +75,7 @@ jobs:
     #   # - NOTIFY: mySlackS1
       
   - name: langtest_u14golall_runCI
-    type: runSh
+    type: runCI
    # allowPublicAccess: false
   #  serial: true
     steps:
@@ -87,7 +87,7 @@ jobs:
         - script: ./IN/duplicate/gitRepo/echo.sh
         
   - name: langtest_u16nodall_runCI
-    type: runSh
+    type: runCI
   #  allowPublicAccess: false
   #  serial: true
     steps:
