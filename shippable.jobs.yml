@@ -41,8 +41,8 @@ jobs:
   
   
   
-  - name: run11
-    type: runSh
+  - name: langtest_u16golall_runCI
+    type: runCI
   #  serial: true
     steps:
       - IN: duplicate
@@ -74,26 +74,26 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: run2
+  - name: langtest_u14golall_runCI
     type: runSh
    # allowPublicAccess: false
   #  serial: true
     steps:
       - IN: duplicate
       - IN: triggertestS1
-      - IN: run11
+      - IN: langtest_u16golall_runCI
       - IN: manifest_dep2
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
         
-  - name: run3
+  - name: langtest_u16nodall_runCI
     type: runSh
   #  allowPublicAccess: false
   #  serial: true
     steps:
       - IN: duplicate
       - IN: triggertestS1
-      - IN: run2
+      - IN: langtest_u14golall_runCI
       - IN: manifest_dep3
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
