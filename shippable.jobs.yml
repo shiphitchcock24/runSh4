@@ -28,36 +28,36 @@ jobs:
       - TASK: managed
     flags: rels1332iio
 #  bump: major  
-
-  - name: runcliscript-pubrepo
-    type: runCLI
-    allowPublicAccess: true
-    steps:
-      - IN: duplicate
+#
+#  - name: runcliscript-pubrepo
+#    type: runCLI
+#    allowPublicAccess: true
+#    steps:
+#      - IN: duplicate
       #- IN: runsh-t1
-      - TASK:
-        - script: ls
-        - script: ./IN/duplicate/gitRepo/echo.sh
-    flags: r435ppp
+#      - TASK:
+#        - script: ls
+#        - script: ./IN/duplicate/gitRepo/echo.sh
+#    flags: r435ppp
   
   
   
-  - name: langtest_u16golall_runCI
-    type: runCI
+#  - name: langtest_u16golall_runCI
+#    type: runCI
   #  serial: true
-    steps:
-      - IN: duplicate
-      - IN: manifest_dep1
+ #   steps:
+ #     - IN: duplicate
+ #     - IN: manifest_dep1
      # - IN:r123env
-      - IN: triggertestS1
-      - TASK:
+ #     - IN: triggertestS1
+ #     - TASK:
        # - script: ./IN/duplicate/gitRepo/echo.sh
-        - script: ./IN/duplicate/gitRepo/echo.sh
-        - script: pwd
-        - script: ls
-        - script: export FOO=bar
-        - script: export FOO1=bar1
-        - script: echo $FOO && echo $FOO1
+  #      - script: ./IN/duplicate/gitRepo/echo.sh
+  #      - script: pwd
+  #      - script: ls
+  #      - script: export FOO=bar
+  #      - script: export FOO1=bar1
+  #      - script: echo $FOO && echo $FOO1
         # - script: "node --version"
         # - script: echo "$foo"
         # - script: echo "$n1"
@@ -75,29 +75,29 @@ jobs:
     #   - script: echo 'failure runSh'
     #   # - NOTIFY: mySlackS1
       
-  - name: langtest_u14golall_runCI
-    type: runCI
+ # - name: langtest_u14golall_runCI
+ #   type: runCI
    # allowPublicAccess: false
   #  serial: true
-    steps:
-      - IN: duplicate
-      - IN: triggertestS1
-      - IN: langtest_u16golall_runCI
-      - IN: manifest_dep2
-      - TASK:
-        - script: ./IN/duplicate/gitRepo/echo.sh
-    flags: r435yyiii
+  #  steps:
+  #    - IN: duplicate
+  #    - IN: triggertestS1
+  #    - IN: langtest_u16golall_runCI
+  #    - IN: manifest_dep2
+  #    - TASK:
+  #      - script: ./IN/duplicate/gitRepo/echo.sh
+  #  flags: r435yyiii
         
-  - name: langtest_u16nodall_runCI
-    type: runCI
+ # - name: langtest_u16nodall_runCI
+ #   type: runCI
   #  allowPublicAccess: false
   #  serial: true
-    steps:
-      - IN: duplicate
-      - IN: triggertestS1
-      - IN: langtest_u14golall_runCI
-      - IN: manifest_dep3
-      - TASK:
-        - script: ./IN/duplicate/gitRepo/echo.sh
-    flags: r43556y
+  #  steps:
+  #    - IN: duplicate
+  #    - IN: triggertestS1
+  #    - IN: langtest_u14golall_runCI
+  #    - IN: manifest_dep3
+  #    - TASK:
+  #      - script: ./IN/duplicate/gitRepo/echo.sh
+  #  flags: r43556y
  
