@@ -26,6 +26,7 @@ jobs:
       - IN: manifest_dep
       #- IN: triggerv2sp2
       - TASK: managed
+    flags: rels1332iio
 #  bump: major  
 
   - name: runcliscript-pubrepo
@@ -37,7 +38,7 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/duplicate/gitRepo/echo.sh
-  
+    flags: r435ppp
   
   
   
@@ -85,6 +86,7 @@ jobs:
       - IN: manifest_dep2
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
+    flags: r435yyiii
         
   - name: langtest_u16nodall_runCI
     type: runCI
@@ -97,4 +99,5 @@ jobs:
       - IN: manifest_dep3
       - TASK:
         - script: ./IN/duplicate/gitRepo/echo.sh
+    flags: r43556y
  
